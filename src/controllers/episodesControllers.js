@@ -1,12 +1,10 @@
-
 class episodesController {
     async index(req, res) { //Listar constas
-        const episodes = {
-            "name": "john",
-            "age": "22"
-        };
-
-        return res.status(200).json(episodes);
+        return res.status(200).json({ "message": "Hello to my api-podcast" });
+    }
+    async getEpisodes(req, res) { //Listar constas
+        const data = require('../episodes.json');
+        return res.status(200).json(data);
     }
 
 }
