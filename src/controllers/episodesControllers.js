@@ -4,7 +4,7 @@ class episodesController {
     }
     async getEpisodes(req, res) { //Listar constas
         const data = require('../episodes.json');
-        return res.status(200).json(data);
+        return res.status(200).json(data.episodes);
     }
 
 }
